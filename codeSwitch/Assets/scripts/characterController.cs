@@ -86,27 +86,27 @@ public class characterController : MonoBehaviour {
 		cc.Move (amountToMove);
         
         //set the z position of the player to -1 each update because the game is 2d
-        Vector3 temp = transform.position;
-        temp.z = 1;
-        transform.position = temp;
+        // Vector3 temp = transform.position;
+        // temp.z = 1;
+        // transform.position = temp;
 
         //keep track of whether or not playing is walking for animations
-        if (hAxis == 0)
-        {
-            animator.SetBool("walking", false);
-        }
-        else
-        {
-            animator.SetBool("walking", true);
-        }
+        // if (hAxis == 0)
+        // {
+        //     animator.SetBool("walking", false);
+        // }
+        // else
+        // {
+        //     animator.SetBool("walking", true);
+        // }
 
-        if (hAxis < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        if (hAxis > 0) {
-            spriteRenderer.flipX = false;
-        }
+        // if (hAxis < 0)
+        // {
+        //     spriteRenderer.flipX = true;
+        // }
+        // if (hAxis > 0) {
+        //     spriteRenderer.flipX = false;
+        // }
        
     }
 }
